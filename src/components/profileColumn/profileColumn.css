@@ -1,0 +1,102 @@
+.profileColumn-container {
+  background-color: #ebabab;
+  border: solid 2px blue;
+  width: 80%;
+}
+
+.profileColumn-imageProfile-container {
+  text-align: center;
+}
+
+.profileColumn-imageProfile {
+  border-radius: 50%;
+  border: solid 1px #30363d;
+  height: auto;
+  margin-top: 45px;
+  position: relative;
+  width: 100%;
+}
+
+.profileColumn-names-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileColumn-name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  overflow: hidden;
+}
+
+.profileColumn-userName {
+  color: #57606a;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.profileColumn-followButton {
+  background-color: rgba(255, 255, 255, 0.199);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.514);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 16px;
+  width: 100%;
+}
+
+.profileColumn-twitterUser {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.profileColumn-social-container {
+  align-items: center;
+  border: solid 1px red;
+  display: flex;
+}
+
+.button-transparent {
+  align-items: center;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.button-transparent > * {
+  margin: 0 2px;
+}
+
+.button-transparent:hover > * {
+  color: blue;
+}
+
+.profileColumn-followingButton {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dot {
+  margin: 0 5px;
+}
+.text-followers {
+  color: #57606a;
+}
+
+.text-following {
+  color: #57606a;
+}
+
+.profileColumn-Email-container {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 3rem;
+}
