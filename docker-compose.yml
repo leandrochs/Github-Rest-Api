@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  frontend:
+    build: ./
+    ports:
+      - 3000:3000
+    platform: linux/x86_64
+    # container_name: frontend
+    working_dir: /frontend
+    healthcheck:
+      test: ["CMD", "lsof", "-t", "-i:3000"]  # Caso utilize outra porta interna para o front, altere ela aqui também
+      timeout: 10s
+      retries: 5
