@@ -16,9 +16,10 @@ export default function ProfileColumn() {
   const { selectColumn, setSelectColumn } = useContext(Context);
   const [followersIconIsHover, setFollowersIconIsHover] = useState(false);
   const [starredIconIsHover, setStarredIconIsHover] = useState(false);
+  const [isFollow, setIsFollow] = useState(false);
 
   function followOnClick() {
-    console.log('seguindo');
+    isFollow ? setIsFollow(false) : setIsFollow(true);
   }
 
   function starredOnClick() {
@@ -57,7 +58,7 @@ export default function ProfileColumn() {
           type='button'
           onClick={followOnClick}
         >
-          Follow
+          {isFollow ? 'Unfollow' : 'Follow'}
         </button>
       </div>
 
