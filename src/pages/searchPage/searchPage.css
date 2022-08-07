@@ -1,0 +1,10 @@
+.searchPage-main {
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  background-color: #f0f0f0;
+  align-items: center;
+}
+
+/* @media only screen and (max-width: 620px) {} */
