@@ -1,0 +1,16 @@
+.pageResult-container {
+  background-color: #f0f0f0;
+  height: 200%;
+}
+
+.pageResult-main {
+  display: flex;
+  height: 100%;
+}
+
+.pageResult-profileColumn-container {
+  border: solid 3px red;
+  width: 29%;
+  display: flex;
+  justify-content: center;
+}
