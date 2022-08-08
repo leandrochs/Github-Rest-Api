@@ -8,6 +8,7 @@ function Provider({ children }) {
   const [userProfile, setUserProfile] = useState('');
   const [selectColumn, setSelectColumn] = useState('');
   const [starredRepositories, setStarredRepositories] = useState('');
+  const [repositories, setRepositories] = useState('');
 
   const contextValue = useMemo(
     () => ({
@@ -21,8 +22,17 @@ function Provider({ children }) {
       setSelectColumn,
       starredRepositories,
       setStarredRepositories,
+      repositories,
+      setRepositories,
     }),
-    [userName, name, userProfile, selectColumn, starredRepositories],
+    [
+      userName,
+      name,
+      userProfile,
+      selectColumn,
+      starredRepositories,
+      repositories,
+    ],
   );
 
   return <Context.Provider value={contextValue}>{children}</Context.Provider>;
