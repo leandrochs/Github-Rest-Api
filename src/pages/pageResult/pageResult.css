@@ -1,15 +1,40 @@
 .pageResult-container {
   background-color: #f0f0f0;
-  height: 200%;
+  height: 130%;
 }
 
 .pageResult-main {
+  background-color: #f0f0f0;
   display: flex;
-  height: 100%;
 }
 
 .pageResult-profileColumn-container {
   display: flex;
   justify-content: center;
   width: 29%;
+}
+
+.pageResult-repositoriesColumn-container {
+  width: 71%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pageResult-header-container {
+    display: none;
+  }
+
+  .pageResult-main {
+    flex-direction: column;
+  }
+
+  .pageResult-profileColumn-container {
+    justify-content: center;
+    width: 90%;
+    align-self: center;
+  }
+
+  .pageResult-repositoriesColumn-container {
+    height: auto;
+    width: 90%;
+  }
 }

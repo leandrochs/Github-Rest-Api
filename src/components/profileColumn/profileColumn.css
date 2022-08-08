@@ -1,6 +1,4 @@
 .profileColumn-container {
-  background-color: #ebabab;
-  border: solid 2px blue;
   width: 80%;
 }
 
@@ -15,6 +13,7 @@
   margin-top: 45px;
   position: relative;
   width: 100%;
+  max-width: 300px;
 }
 
 .profileColumn-names-container {
@@ -37,9 +36,9 @@
 }
 
 .profileColumn-followButton {
-  background-color: rgba(255, 255, 255, 0.199);
+  background-color: #c4cfdaa1;
   border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.514);
+  border: 1px solid rgba(155, 161, 167, 0.63);
   cursor: pointer;
   font-size: 14px;
   line-height: 20px;
@@ -55,8 +54,9 @@
 
 .profileColumn-social-container {
   align-items: center;
-  border: solid 1px red;
   display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
 }
 
 .button-transparent {
@@ -99,4 +99,11 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 3rem;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .profileColumn-container {
+    width: 90%;
+  }
 }

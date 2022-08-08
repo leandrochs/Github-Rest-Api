@@ -35,3 +35,18 @@
   border: solid 3px #cacdcf;
   margin: 5px;
 }
+
+@media only screen and (max-width: 1000px) {
+  .header-container {
+    justify-content: flex-start;
+    position: initial;
+  }
+
+  .show-image-profile {
+    display: none;
+  }
+
+  .header-repositories-container {
+    margin-left: 0;
+  }
+}
