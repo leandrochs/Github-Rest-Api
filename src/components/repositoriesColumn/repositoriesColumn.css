@@ -1,4 +1,54 @@
 .repositoriesColumn-container {
   height: 90%;
+  margin-top: 7rem;
   width: 71%;
+}
+
+.repository-summary-container {
+  border-bottom: solid 1px gray;
+}
+
+.repositoriesColumn-github-Link-container {
+  margin: 3rem 0 1rem;
+}
+
+.repositoriesColumn-github-Link {
+  color: #0969da;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.repositoriesColumn-description {
+  color: #57606a;
+  margin-bottom: 8px;
+}
+
+.repositoriesColumn-language-fork-licence {
+  color: #57606a;
+  display: flex;
+  font-size: small;
+  margin: 1.1rem 0;
+}
+
+.repositoriesColumn-language-color {
+  align-self: center;
+  background-color: gray;
+  border-radius: 50%;
+  height: 0.8rem;
+  margin-right: 0.3rem;
+  width: 0.8rem;
+}
+
+.repositoriesColumn-language {
+  padding-right: 1rem;
+}
+
+.repositoriesColumn-fork {
+  padding-right: 1rem;
+  display: flex;
+}
+
+.repositoriesColumn-licence {
+  margin-right: 1rem;
 }
