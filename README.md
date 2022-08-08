@@ -1,6 +1,6 @@
 # Encontre reposiórios no Github buscando por nome de usuário
 
-O deploi deste projeto pode ser encontrado em [Create React App](https://github.com/facebook/create-react-app).
+O deploy deste projeto pode ser encontrado em [Create React App](https://github.com/facebook/create-react-app).
 
 ## Scripts
 
