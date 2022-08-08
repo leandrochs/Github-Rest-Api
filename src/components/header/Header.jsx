@@ -2,11 +2,9 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Context } from '../../context/Context';
 import './header.css';
 
-import { githubUser as userProfile } from '../../tests/Mocks/githubUser';
-
 export default function Header(props) {
   const [showImageProfile, setShowImageProfile] = useState('hide-image-profile');
-  // const { userProfile } = useContext(Context);
+  const { userProfile } = useContext(Context);
 
   useEffect(() => {
     const scrollListener = () => {
@@ -24,7 +22,7 @@ export default function Header(props) {
   return (
     <header className='header-container'>
       <div className={showImageProfile}>
-        <img src={userProfile?.avatar_url} height='40' alt="Imagem de Perfil" />
+        <img src={userProfile?.avatar_url} height='40' alt='Imagem de Perfil' />
       </div>
       <div className='header-repositories-container'>
         <p>Repositories</p>

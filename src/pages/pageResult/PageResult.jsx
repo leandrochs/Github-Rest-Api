@@ -2,22 +2,21 @@ import React, { useContext } from 'react';
 import Header from '../../components/header/Header';
 import ProfileColumn from '../../components/profileColumn/ProfileColumn';
 import RepositoriesColumn from '../../components/repositoriesColumn/RepositoriesColumn';
-import Context from '../../context/Context';
 import './pageResult.css';
 
 export default function PageResult() {
-  // const { selectColumn, setSelectColumn } = useContext(Context);
-
   return (
     <div className='pageResult-container'>
-      <Header name={'Leandro Atlas'} />
+      <div className='pageResult-header-container'>
+        <Header />
+      </div>
       <main className='pageResult-main'>
-        <div className='pageResult-profileColumn-container'>
+        <section className='pageResult-profileColumn-container'>
           <ProfileColumn />
-        </div>
-        {/* <section> */}
+        </section>
+        <section className='pageResult-repositoriesColumn-container'>
           <RepositoriesColumn />
-        {/* </section> */}
+        </section>
       </main>
     </div>
   );

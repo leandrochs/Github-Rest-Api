@@ -2,14 +2,14 @@ import React, { useContext, useState } from 'react';
 import Context from '../../context/Context';
 import mGlass from '../../images/magnifying-glass.svg';
 import getApiByUserName from '../../services/getApiByUserName';
-import './form.css';
 import { Redirect } from 'react-router-dom';
+import './form.css';
 
 export default function Form() {
   const { userName, setUserName } = useContext(Context);
   const { setUserProfile } = useContext(Context);
+  const { error, setError } = useContext(Context);
   const [validReturn, setValidReturn] = useState(false);
-  const [error, setError] = useState('');
 
   async function getApi(params) {
     const gitResult = await getApiByUserName(userName);
@@ -33,6 +33,7 @@ export default function Form() {
           Buscar Repositório no Github
           <input
             className='form-inputUserName'
+            data-testid='name-input-text'
             type='text'
             value={userName}
             placeholder='Digite o nome de usuário...'

@@ -6,7 +6,6 @@ function Provider({ children }) {
   const [userName, setUserName] = useState('');
   const [name, setName] = useState('');
   const [userProfile, setUserProfile] = useState('');
-  const [selectColumn, setSelectColumn] = useState('');
   const [starredRepositories, setStarredRepositories] = useState('');
   const [repositories, setRepositories] = useState('');
 
@@ -18,21 +17,12 @@ function Provider({ children }) {
       setName,
       userProfile,
       setUserProfile,
-      selectColumn,
-      setSelectColumn,
       starredRepositories,
       setStarredRepositories,
       repositories,
       setRepositories,
     }),
-    [
-      userName,
-      name,
-      userProfile,
-      selectColumn,
-      starredRepositories,
-      repositories,
-    ],
+    [userName, name, userProfile, starredRepositories, repositories],
   );
 
   return <Context.Provider value={contextValue}>{children}</Context.Provider>;
