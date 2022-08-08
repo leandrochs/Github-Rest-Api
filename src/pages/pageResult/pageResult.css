@@ -9,8 +9,7 @@
 }
 
 .pageResult-profileColumn-container {
-  border: solid 3px red;
-  width: 29%;
   display: flex;
   justify-content: center;
+  width: 29%;
 }
